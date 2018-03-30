@@ -17,6 +17,15 @@
 		</p>
 		<hr>
 		
+		<p>
+			<a href="${pageContext.request.contextPath}/leaders">Leadership Option</a>
+		</p>		
+
+		<p>
+			<a href="${pageContext.request.contextPath}/systems">Systems Admin</a>
+		</p>		
+		
+		<hr>
 		
 		<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 			<input type="submit" value="Logout"/>
