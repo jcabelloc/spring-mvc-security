@@ -17,13 +17,17 @@
 		</p>
 		<hr>
 		
-		<p>
-			<a href="${pageContext.request.contextPath}/leaders">Leadership Option</a>
-		</p>		
+		<security:authorize access="hasRole('manager')">
+			<p>
+				<a href="${pageContext.request.contextPath}/leaders">Leadership Option</a>
+			</p>		
+		</security:authorize>
 
-		<p>
-			<a href="${pageContext.request.contextPath}/systems">Systems Admin</a>
-		</p>		
+		<security:authorize access="hasRole('admin')">
+			<p>
+				<a href="${pageContext.request.contextPath}/systems">Systems Admin</a>
+			</p>		
+		</security:authorize>
 		
 		<hr>
 		
